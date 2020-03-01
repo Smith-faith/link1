@@ -1,0 +1,85 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  state: {
+    CompanyName: '',
+    MailingAddressA1: '',
+    MailingAddressA2: '',
+    City1: '',
+    State1: '',
+    Zip1: '',
+    ContactName: '',
+    PhoneNumber:'',
+    FaxNumber: '',
+    EmailAddress:'',
+    MailingQuestion:'',
+     MailingAddressB1: '',
+    MailingAddressB2: '',
+    City2: '',
+    State2: '',
+    Zip2: '',
+    TaxDesignator: '',
+    TaxId: '',
+    Type: '',
+    Status: '',
+    Employees: '',
+    EmailPending: '',
+   Email: ""
+  },
+  getters: {
+  getCompanyName: state => state.CompanyName,
+  getMailingAddressA1: state =>  state.MailingAddressA1,
+  getMailingAddressA2: state => state.MailingAddressA2,
+  getCity1: state =>  state.City1,
+  getState1: state =>  state.State1,
+  getZip1: state =>   state.Zip1,
+  getContactName: state => state.ContactName,
+  getPhoneNumber:  state => state.PhoneNumber,
+  getFaxNumber: state => state.FaxNumber,
+  getEmailAddress: state => state.EmailAddress,
+  getMailingQuestion: state =>  state.MailingQuestion,
+  getMailingAddressB1: state =>  state.MailingAddressB1,
+  getMailingAddressB2: state => state.MailingAddressB2,
+  getCity2: state =>  state.City2,
+  getState2: state =>  state.State2,
+  getZip2: state =>   state.Zip2,
+  getTaxDesignator: state =>  state.TaxDesignator,
+   getTaxId: state =>  state.TaxId,
+  getType: state => state.Type,
+  getStatus: state => state.Status,
+  getEmployees: state =>  state.Employees,
+   getEmailPending: state => state.EmailPending,
+getEmail: state => state.Email
+  },
+  mutations: {
+    addCompanyName:(state, CompanyName) => state.CompanyName = CompanyName,
+    addMailingAddressA1: (state, MailingAddressA1) =>  state.MailingAddressA1 = MailingAddressA1,
+    addMailingAddressA2: (state,MailingAddressA2 ) => state.MailingAddressA2 = MailingAddressA2,
+    addCity1: (state, City1) =>  state.City1 = City1,
+    addState1: (state, State1) =>  state.State1 = State1,
+    addZip1: (state, Zip1) =>   state.Zip1 = Zip1,
+    addContactName: (state,ContactName) => state.ContactName = ContactName,
+    addPhoneNumber:  (state,PhoneNumber) => state.PhoneNumber = PhoneNumber,
+    addFaxNumber: (state, FaxNumber) => state.FaxNumber = FaxNumber,
+    addEmailAddress: (state, EmailAddress) => state.EmailAddress = EmailAddress,
+    addMailingQuestion: (state, MailingQuestion) =>  state.MailingQuestion = MailingQuestion,
+    addMailingAddressB1: (state, MailingAddressB1) =>  state.MailingAddressB1 = MailingAddressB1,
+    addMailingAddressB2: (state,MailingAddressB2 ) => state.MailingAddressB2 = MailingAddressB2,
+    addCity2: (state, City2) =>  state.City2 = City2,
+    addState2: (state, State2) =>  state.State2 = State2,
+    addZip2: (state, Zip2) =>   state.Zip2 = Zip2,
+    addTaxDesignator: (state,TaxDesignator) =>  state.TaxDesignator = TaxDesignator,
+    addTaxId: (state, TaxId) =>  state.TaxId = TaxId,
+    addType: (state, Type) => state.Type = Type,
+    addStatus: (state, Status) => state.Status = Status,
+    addEmployees: (state,Employees) =>  state.Employees = Employees,
+    addEmailPending: (state, EmailPending ) => state.EmailPending = EmailPending,
+    addEmail: (state, Email) => state.Email = Email
+  },
+  actions: {
+
+  }
+})
